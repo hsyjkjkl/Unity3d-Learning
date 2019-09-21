@@ -4,6 +4,7 @@ using UnityEngine;
 using dpGame;
 
 public class Controller : MonoBehaviour, SceneController, Interaction {
+    // bool forbid = false;
     public BankController leftBank;
     public BankController rightBank;
     public BoatController boat;
@@ -46,6 +47,7 @@ public class Controller : MonoBehaviour, SceneController, Interaction {
 
     public void MoveBoat() {
         if (u.status ==0 ) return;
+        if (forbidEvent()) return;
         if (! boat.isEmpty()) {
             boat.Move();
         }
@@ -54,6 +56,7 @@ public class Controller : MonoBehaviour, SceneController, Interaction {
 
     public void moveCharacters (dpGame.CharacterController chr) {
         if (u.status ==0 ) return;
+        if (forbidEvent()) return;
         if (chr.getState() == 1) {
             BankController bank;
             if (boat.getLR() == 0) {
@@ -122,6 +125,15 @@ public class Controller : MonoBehaviour, SceneController, Interaction {
         return 1;
     }
 
+    //检查是否正在运动
+    public bool forbidEvent() {
+        if (boat.move.state != 0) return true;
+        for (int i = 0; i < characters.Length; i ++) {
+            if (characters[i].move.state != 0)
+                return true;
+        }
+        return false;
+    }
     public void Restart() {
         boat.init();
         leftBank.init();

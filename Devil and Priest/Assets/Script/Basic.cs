@@ -34,7 +34,7 @@ namespace dpGame
 
     public class Move : MonoBehaviour {
         readonly float speed = 20;
-        int state; // 0->不运动， 1->从岸边到船上的中间过程（只对人物角色有效），2->到达目的地
+        public int state; // 0->不运动， 1->从岸边到船上的中间过程（只对人物角色有效），2->到达目的地
         Vector3 dest;
         Vector3 tmp;
         void Update()
@@ -82,7 +82,7 @@ namespace dpGame
     public class CharacterController {
         GameObject character;
         ClickEvent click;
-        Move move;
+        public Move move;
         int state; // Boat = 1, bank = 0;
         int man; //Devil = 0, Priest = 1;
         int tag;
@@ -230,7 +230,7 @@ namespace dpGame
 
     public class BoatController{
         GameObject boat;
-        Move move;
+        public Move move;
         Vector3 start = new Vector3(-4f, -1.6f, 0);
         Vector3 end = new Vector3(4f, -1.6f, 0);
         Vector3[] seatPos;
