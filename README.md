@@ -10,3 +10,7 @@
 
 ## 第二次编程作业 魔鬼与牧师（简单MVC实现）
 [Devil and Priest](https://github.com/hsyjkjkl/Unity3d-Learning/tree/master/Devil%20and%20Priest)
+
+实验过程（报告）：见Devil and Priest目录下的README.md文件，（博客地址待更新）
+
+游戏视频演示地址：（待发布）
