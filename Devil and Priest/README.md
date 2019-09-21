@@ -1,6 +1,8 @@
 # 前言
 简答题部分的博客地址：[传送门](https://blog.csdn.net/JKJKL1/article/details/101037982)，如果是404可能是更改了还没过审，可访问同一目录下的[太阳系.md](https://github.com/hsyjkjkl/Unity3d-Learning/blob/master/Devil%20and%20Priest/%E5%A4%AA%E9%98%B3%E7%B3%BB.md)
 
+本实验视频链接：[魔鬼与牧师](https://www.bilibili.com/video/av68549827/)
+
 资料来源于潘老师的[课程网站](https://pmlpml.github.io/unity3d-learning/)，详细信息可以去了解。
 
 还有附上参考大佬的优秀博客：[传送门](https://www.jianshu.com/p/07028b3da573)
