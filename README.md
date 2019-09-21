@@ -13,4 +13,6 @@
 
 实验过程（报告）：见Devil and Priest目录下的README.md文件，（博客地址待更新）
 
-游戏视频演示地址：（待发布）
+空间与物体运动简答题（含简单太阳系制作） ：见Devil and Priest目录下的太阳系.md文件，（博客地址待更新）
+
+游戏视频演示地址：[视频链接](https://www.bilibili.com/video/av68549827/)
