@@ -2,6 +2,8 @@
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <LangVersion>latest</LangVersion>
+    <CscToolPath>E:\Unity\2019.2.2f1\Editor\Data\Tools\RoslynScripts</CscToolPath>
+    <CscToolExe>unity_csc.bat</CscToolExe>
   </PropertyGroup>
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -59,31 +61,31 @@
      <Compile Include="Assets\Script\Light.cs" />
      <Compile Include="Assets\Script\UI.cs" />
  <Reference Include="Unity.Timeline.Editor">
- <HintPath>E:/hsy/Documents/Unity/Devil and Priest/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+ <HintPath>E:/hsy/Documents/Unity/Unity3d-Learning/Devil and Priest/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.VSCode.Editor">
- <HintPath>E:/hsy/Documents/Unity/Devil and Priest/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
+ <HintPath>E:/hsy/Documents/Unity/Unity3d-Learning/Devil and Priest/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.TextMeshPro.Editor">
- <HintPath>E:/hsy/Documents/Unity/Devil and Priest/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+ <HintPath>E:/hsy/Documents/Unity/Unity3d-Learning/Devil and Priest/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.UI">
- <HintPath>E:/hsy/Documents/Unity/Devil and Priest/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+ <HintPath>E:/hsy/Documents/Unity/Unity3d-Learning/Devil and Priest/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Timeline">
- <HintPath>E:/hsy/Documents/Unity/Devil and Priest/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+ <HintPath>E:/hsy/Documents/Unity/Unity3d-Learning/Devil and Priest/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
  </Reference>
  <Reference Include="Unity.CollabProxy.Editor">
- <HintPath>E:/hsy/Documents/Unity/Devil and Priest/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+ <HintPath>E:/hsy/Documents/Unity/Unity3d-Learning/Devil and Priest/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Rider.Editor">
- <HintPath>E:/hsy/Documents/Unity/Devil and Priest/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+ <HintPath>E:/hsy/Documents/Unity/Unity3d-Learning/Devil and Priest/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.TextMeshPro">
- <HintPath>E:/hsy/Documents/Unity/Devil and Priest/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+ <HintPath>E:/hsy/Documents/Unity/Unity3d-Learning/Devil and Priest/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.UI">
- <HintPath>E:/hsy/Documents/Unity/Devil and Priest/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+ <HintPath>E:/hsy/Documents/Unity/Unity3d-Learning/Devil and Priest/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.AIModule">
  <HintPath>E:/Unity/2019.2.2f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
