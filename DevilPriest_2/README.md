@@ -3,6 +3,8 @@
 
 本次项目Github地址：[传送门](https://github.com/hsyjkjkl/Unity3d-Learning/tree/master/DevilPriest_2)
 
+本次项目的视频演示地址(跟上一次的演示没有什么大的区别)：[传送门](https://www.bilibili.com/video/av69264945/)
+
 项目的详细内容见潘老师的课程网站：[网站链接](https://pmlpml.github.io/unity3d-learning/04-gameobject-and-graphics)
 
 基本操作演练（构建游戏场景）的实验内容在文章末尾，[点此跳转](#基本操作演练)
