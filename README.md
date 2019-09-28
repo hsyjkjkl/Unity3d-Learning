@@ -16,3 +16,10 @@
 空间与物体运动简答题（含简单太阳系制作） ：见Devil and Priest目录下的太阳系.md文件，（[博客链接](https://blog.csdn.net/JKJKL1/article/details/101037982)）
 
 游戏视频演示地址：[视频链接](https://www.bilibili.com/video/av68549827/)
+
+## 第三次编程作业 魔鬼与牧师（动作分离版本）
+[项目地址：DevilPriest_2](https://github.com/hsyjkjkl/Unity3d-Learning/tree/master/DevilPriest_2)
+
+项目演示视频：[视频链接](https://www.bilibili.com/video/av69264945/)
+
+实验报告：[CSDN博客](https://blog.csdn.net/JKJKL1/article/details/101535175)
