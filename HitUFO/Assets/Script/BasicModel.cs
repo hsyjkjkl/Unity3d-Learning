@@ -44,7 +44,6 @@ public interface Interaction
 {
 	void hit(Vector3 pos);
     int GetScore();
-    //游戏结束
     int getState();
 	void changeState(int a);
 	void reset();
