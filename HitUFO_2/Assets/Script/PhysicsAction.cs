@@ -27,8 +27,6 @@ public class PhysicsAction : SSAction {
                 
             }
             this.callBack.SSActionEvent(this);
-            Controller c = Director.getInstance().currentSceneController as Controller;
-            c.used --;
         }
     }
 

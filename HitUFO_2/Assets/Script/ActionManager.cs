@@ -4,7 +4,6 @@ using UnityEngine;
 
 public enum ActionMode { PHYSICS, MOVE, NONE}
 public class ActionManager : MonoBehaviour{
-    public ActionMode mode;
     private Dictionary<int, SSAction> actions = new Dictionary<int, SSAction>();
     private List<SSAction> waitingForAdd = new List<SSAction>();
     private List<int> waitingForDelete = new List<int>();
@@ -16,10 +15,6 @@ public class ActionManager : MonoBehaviour{
     }
     protected void FixedUpdate()
     {   
-        controller = Director.getInstance().currentSceneController as Controller;
-        mode = controller.mode;
-        if(mode == ActionMode.NONE) return;
-
         foreach (SSAction action in waitingForAdd)
         {
             actions[action.GetInstanceID()] = action;
@@ -35,12 +30,42 @@ public class ActionManager : MonoBehaviour{
                 waitingForDelete.Add(action.GetInstanceID());
             } else if (action.enable)
             {
-                if (mode== ActionMode.PHYSICS)
-                    action.FixedUpdate();
-                else 
-                    action.Update();
+                action.FixedUpdate();
             }
         }
+        
+
+        foreach (int key in waitingForDelete)
+        {
+            SSAction action = actions[key];
+            actions.Remove(key);
+            Destroy(action);
+        }
+        
+        waitingForDelete.Clear();
+    }
+
+    protected void Update()
+    {
+        foreach (SSAction action in waitingForAdd)
+        {
+            actions[action.GetInstanceID()] = action;
+        }
+        
+        waitingForAdd.Clear();
+
+        foreach (KeyValuePair<int,SSAction> pair in actions)
+        {
+            SSAction action = pair.Value;
+            if (action.destroy)
+            {
+                waitingForDelete.Add(action.GetInstanceID());
+            } else if (action.enable)
+            {
+                action.Update();
+            }
+        }
+        
 
         foreach (int key in waitingForDelete)
         {

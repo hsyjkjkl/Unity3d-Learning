@@ -22,5 +22,6 @@ public class PhysicsManager : ActionManager, ISSActionCallback, IActionManager {
     }
      public void SSActionEvent(SSAction action){
         Singleton<DiskFactory>.Instance.freeDisk(action.gameObject);
+        controller.used --;
     }
 }

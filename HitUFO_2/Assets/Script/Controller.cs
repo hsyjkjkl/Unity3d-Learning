@@ -33,9 +33,9 @@ public class Controller : MonoBehaviour, SceneController, ISSActionCallback, Int
     {   
         if (mode == ActionMode.NONE) return;
 
-        if (state <= 0) {
+        // if (state <= 0) {
             
-        }
+        // }
 
         if (state <= 0 || state == 2) {
             return;
@@ -66,6 +66,7 @@ public class Controller : MonoBehaviour, SceneController, ISSActionCallback, Int
 
         if (time > 1.5 && used == 0)
         {   
+            Debug.Log("Throw!");
             if (Singleton<Judger>.Instance.checkGame() == false) {
                 changeState(-1);
                 return;
