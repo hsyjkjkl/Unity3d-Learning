@@ -19,7 +19,7 @@ public class PatrolAction : SSAction {
     }
 
     public override void Update(){
-        if (/*game runing*/true) {
+        if (Director.getInstance().currentSceneController.getState() == 1) {
             PatrolWalk();
             if (!info.tracking && info.seePlayer && info.patrolArea == info.playerArea) {
                this.destroy = true;
@@ -56,7 +56,6 @@ public class PatrolAction : SSAction {
         } else if (distance <= 0.1) {
             turn = true;
         } else {
-            // 向前移动巡逻兵
             this.transform.Translate(0, 0, Time.deltaTime );
         }
     } 
