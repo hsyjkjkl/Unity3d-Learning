@@ -78,7 +78,9 @@
 
 ## 第十次编程作业 AR/MR技术了解
 
-项目目录名：[AR_Game](https://github.com/hsyjkjkl/Unity3d-Learning/tree/master/AR_Game)
+AR堂上练习（龙）：[AR](https://github.com/hsyjkjkl/Unity3d-Learning/tree/master/AR)
+
+AR小游戏：[AR_Game](https://github.com/hsyjkjkl/Unity3d-Learning/tree/master/AR_Game)
 
 项目演示视频： [暂无]()
 
